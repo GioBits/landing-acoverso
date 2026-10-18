@@ -14,6 +14,8 @@
   .hero>.ctas{grid-column:1;grid-row:4}
   .hero>.video{grid-column:2;grid-row:1 / span 4;align-self:center;margin-top:0 !important}
   .hero>.stats{grid-column:1 / -1;grid-row:5;margin-top:56px}
+  .hero--solo{grid-template-columns:minmax(0,1fr)}
+  .hero--solo>.lead{max-width:640px}
   .feat{grid-template-columns:repeat(3,minmax(0,1fr))}
   .cs{flex-basis:calc((100% - 32px) / 3)}
   .agenda.mod{margin-top:clamp(88px,11vw,128px)}
