@@ -1,0 +1,7 @@
+/* barra inferior móvil */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:35;padding:12px max(16px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));
+  background:rgba(0,0,0,.82);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-top:1px solid rgba(51,195,255,.6);box-shadow:0 -1px 12px -4px rgba(51,195,255,.6);
+  transform:translateY(110%);transition:transform .45s var(--ease)}
+.dock.show{transform:none}
+.dock .btn{width:100%;min-height:52px}
+@media (min-width:1024px){.dock{display:none}}

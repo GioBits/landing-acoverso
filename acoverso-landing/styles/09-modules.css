@@ -1,0 +1,11 @@
+/* módulos */
+.mod{position:relative;margin-top:clamp(88px,11vw,128px);padding-top:30px}
+.edge{position:absolute;left:0;right:0;top:0;height:1px;background:var(--hair)}
+.edge i{position:absolute;inset:0;transform-origin:left center;transition:transform 1.5s var(--ease);background:linear-gradient(90deg,var(--neon),rgba(51,195,255,.5) 30%,rgba(51,195,255,0) 88%);box-shadow:0 0 10px rgba(51,195,255,.5)}
+.edge::before{content:"";position:absolute;left:-48px;top:-44px;width:340px;height:88px;background:radial-gradient(closest-side,rgba(0,128,248,.2),rgba(0,128,248,0));transition:opacity 1.5s var(--ease)}
+.edge .dd{position:absolute;left:0;top:-3px;display:flex;gap:4px;transition:opacity .6s var(--ease)}
+.edge .dd span{width:6px;height:6px;background:var(--neon);box-shadow:0 0 10px 2px rgba(51,195,255,.8)}
+.js .mod:not(.is-lit) .edge i{transform:scaleX(0)}
+.js .mod:not(.is-lit) .edge::before,.js .mod:not(.is-lit) .edge .dd{opacity:0}
+.edge{z-index:1}
+.js .mod:not(.is-lit) .kick{color:var(--fg-3)}

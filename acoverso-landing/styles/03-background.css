@@ -1,0 +1,16 @@
+/* fondo */
+.pg{position:relative;isolation:isolate;overflow-x:clip}
+.gridbg{position:absolute;inset:0;z-index:-2;pointer-events:none;
+  background-image:linear-gradient(to right,rgba(0,128,248,.13) 1px,transparent 1px),linear-gradient(rgba(0,128,248,.13) 1px,transparent 1px);
+  background-size:40px 40px;
+  -webkit-mask-image:linear-gradient(#000 0,rgba(0,0,0,.72) 460px,rgba(0,0,0,.2) 1400px,rgba(0,0,0,.2) 100%);
+  mask-image:linear-gradient(#000 0,rgba(0,0,0,.72) 460px,rgba(0,0,0,.2) 1400px,rgba(0,0,0,.2) 100%),linear-gradient(90deg,transparent 0,#000 12%,#000 88%,transparent 100%);
+  mask-composite:intersect}
+.grain{position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.05;mix-blend-mode:screen}
+.heroglow{position:absolute;z-index:-1;left:-10%;top:-160px;width:min(900px,140vw);height:620px;pointer-events:none;background:radial-gradient(closest-side,rgba(0,128,248,.22),rgba(0,88,184,.08) 55%,rgba(0,88,184,0))}
+.spot{position:fixed;left:0;top:0;width:560px;height:560px;z-index:0;pointer-events:none;opacity:0;transition:opacity .5s var(--ease);
+  -webkit-mask-image:radial-gradient(closest-side,#000,transparent);mask-image:radial-gradient(closest-side,#000,transparent);overflow:hidden;will-change:transform}
+.spot.on{opacity:1}
+.spot::before{content:"";position:absolute;inset:0;background:radial-gradient(closest-side,rgba(0,128,248,.16),rgba(0,128,248,0))}
+.spot i{position:absolute;left:0;top:0;width:640px;height:640px;will-change:transform;
+  background-image:linear-gradient(to right,rgba(51,195,255,.32) 1px,transparent 1px),linear-gradient(rgba(51,195,255,.32) 1px,transparent 1px);background-size:40px 40px}

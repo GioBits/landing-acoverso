@@ -1,0 +1,26 @@
+/* ---- PC (>=1024px): layout completo, agenda como sección propia al final ---- */
+.ag-left,.ag-right{display:contents}
+.agenda .card{display:flex;flex-direction:column}
+.agenda .card>.ag-left>.fine{order:9}
+.agenda>.edge{display:none}
+@media (min-width:1024px){
+  .layout{display:block !important;padding-block:72px 140px}
+  .agenda{position:static !important}
+  .agenda>.edge{display:block}
+  .hero{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);column-gap:56px;align-items:start}
+  .hero>.chip-bos{grid-column:1;grid-row:1;justify-self:start}
+  .hero>.h1{grid-column:1;grid-row:2;font-size:60px}
+  .hero>.lead{grid-column:1;grid-row:3}
+  .hero>.ctas{grid-column:1;grid-row:4}
+  .hero>.video{grid-column:2;grid-row:1 / span 4;align-self:center;margin-top:0 !important}
+  .hero>.stats{grid-column:1 / -1;grid-row:5;margin-top:56px}
+  .feat{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .cs{flex-basis:calc((100% - 32px) / 3)}
+  .agenda.mod{margin-top:clamp(88px,11vw,128px)}
+  .agenda .card{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);column-gap:56px;padding:44px 48px}
+  .agenda .readbar{display:none}
+  .ag-left{display:flex;flex-direction:column}
+  .ag-left h2{font-size:48px}
+  .ag-left .fine{margin-top:auto}
+  .ag-right{display:block;min-width:0}
+}

@@ -1,0 +1,6 @@
+/* aviso legal al final de la página */
+.legal-note{border-top:1px solid var(--hair)}
+.legal-note .wrap{padding-block:28px}
+.legal-note p{margin:0;max-width:880px;font-size:13px;line-height:1.6;color:var(--fg-3)}
+.legal-note a{color:var(--fg-2);text-decoration:underline;text-underline-offset:3px}
+.legal-note a:hover{color:var(--neon)}

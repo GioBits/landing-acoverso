@@ -1,0 +1,8 @@
+/* footer */
+.ftr{border-top:1px solid var(--hair)}
+.ftr .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px 24px;flex-wrap:wrap;padding-block:32px}
+.ftr img{height:32px;width:auto;display:block}
+.ftr nav{display:flex;gap:8px 24px;flex-wrap:wrap;align-items:center;font-size:13px;color:var(--fg-3)}
+.ftr a{color:var(--fg-2);text-decoration:none;padding:10px 0}
+.ftr a:hover{color:var(--fg)}
+@media (max-width:639px){.ftr .wrap{flex-direction:column;text-align:center}.ftr nav{justify-content:center}}

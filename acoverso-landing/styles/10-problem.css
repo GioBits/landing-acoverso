@@ -1,0 +1,9 @@
+/* obstáculo */
+.cards3{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-top:30px}
+@media (min-width:760px){.cards3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.card{background:var(--surface);border:1px solid var(--hair);border-radius:16px;transition:border-color .3s var(--ease),box-shadow .3s var(--ease)}
+@media (hover:hover){.card:hover{border-color:rgba(51,195,255,.55);box-shadow:0 0 14px -4px rgba(51,195,255,.6)}}
+.pain{padding:24px}
+.pain .n{margin:0 0 16px;font-family:var(--f-mono);font-size:12px;color:var(--neon)}
+.pain h3{margin:0 0 10px;font-family:var(--f-sub);font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:22px;line-height:1.1}
+.pain p{margin:0;font-size:15.5px;color:var(--fg-2)}
