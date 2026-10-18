@@ -2,10 +2,15 @@
 
 export const site = {
   name: 'ÄCOVERSO',
+  // Cómo lo escribe la gente al buscar (sin diéresis)
+  alternateName: 'Acoverso',
   company: 'ACOVERSO LLC',
   url: 'https://acoverso.com',
+  // Título de la home en Google y al compartir el enlace
+  title: 'ÄCOVERSO (Acoverso) · Sistema para escalar marcas personales sin perder calidad',
   description:
-    'ÄCOVERSO enseña a marcas personales a monetizar y escalar sin perder la calidad de su entrega de servicio, con el BOS y el autoCSM.',
+    'ÄCOVERSO ayuda a marcas personales que venden mentorías, cursos o servicios a monetizar y escalar sin perder la calidad de su entrega, con el BOS y el autoCSM.',
+  locale: 'es_ES',
   instagram: { handle: '@alexacostamk', url: 'https://instagram.com/alexacostamk' },
 };
 

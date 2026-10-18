@@ -1,8 +1,7 @@
 import '@/styles/legal.css';
 import { notFound } from 'next/navigation';
 import LegalPage from '@/components/legal/LegalPage';
-import { legalDocs } from '@/content/legal';
-import { site } from '@/config/site';
+import { legalDocs, legalSettings } from '@/content/legal';
 
 // /terminos, /privacidad y /cookies. Para añadir otra política, crea content/legal/<slug>.js
 // y regístrala en content/legal/index.js.
@@ -15,7 +14,14 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const doc = legalDocs[slug];
-  return doc ? { title: `${doc.title} · ${site.name}`, alternates: { canonical: `/${slug}` } } : {};
+  if (!doc) return {};
+  return {
+    title: doc.title, // el layout añade " · ÄCOVERSO"
+    description: doc.intro,
+    alternates: { canonical: `/${slug}` },
+    // Mientras sean borrador, Google no las indexa
+    ...(legalSettings.showDraftNotice && { robots: { index: false, follow: true } }),
+  };
 }
 
 export default async function Page({ params }) {

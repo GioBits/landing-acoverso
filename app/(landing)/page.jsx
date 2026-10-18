@@ -11,6 +11,7 @@ import Cases from '@/components/sections/Cases';
 import Faq from '@/components/sections/Faq';
 import Closing from '@/components/sections/Closing';
 import LandingBehaviors from '@/components/LandingBehaviors';
+import StructuredData from '@/components/StructuredData';
 import { integrations } from '@/config/site';
 import { legalFingerprints } from '@/lib/legal';
 
@@ -21,6 +22,7 @@ export default function Home() {
   const docs = legalFingerprints();
   return (
     <>
+      <StructuredData />
       <div className="pg" id="top">
         <Background />
         <Header />

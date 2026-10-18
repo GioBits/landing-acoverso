@@ -18,7 +18,7 @@ export const cta = {
 export const hero = {
   tag: 'BOS',
   title: ['Toda tu marca conectada en ', { hl: 'un solo sistema' }],
-  lead: 'Si ya vendes y tu modelo de entrega de servicio no te permite escalar, hay una razón concreta. Te la explico en 2 minutos.',
+  lead: 'Si ya vendes tu mentoría, curso o servicio y tu modelo de entrega no te permite escalar, hay una razón concreta. Te la explico en 2 minutos.',
   videoCaption: '[VIDEO LOOM · 2 MIN]',
   secondaryCta: { label: 'Ver cómo funciona', href: '#sistema' },
   // Cifras bajo el hero: suben de 0 al valor al entrar en pantalla
