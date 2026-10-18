@@ -38,7 +38,11 @@ export default function Agenda() {
           </div>
 
           <div className="box cal" id="boxCal" hidden>
-            <div id="calEmbed"></div>
+            {/* Con calLink, el calendario se abre en un modal de Cal.com; este botón lo vuelve a abrir */}
+            <div id="calLaunch" hidden>
+              <p>{agenda.calMessage}</p>
+              <button className="btn btn--sm" type="button" id="calOpen">{agenda.calOpenLabel}</button>
+            </div>
             {/* Vista de ejemplo: solo se ve si no hay calLink configurado */}
             <div id="calDemo">
               <div className="cal-top"><span className="sub" style={{ fontSize: 15 }}>[Mes]</span><span className="mono">Cal.com · vista de ejemplo</span></div>

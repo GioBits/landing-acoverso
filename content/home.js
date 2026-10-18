@@ -36,6 +36,8 @@ export const agenda = {
   noMessage:
     'Este diagnóstico es para marcas que ya venden un producto validado. Mientras tanto, en Instagram compartimos cada semana cómo construir ese primer sistema.',
   noLinkLabel: 'Seguir a @alexacostamk',
+  calMessage: 'Elige tu horario en el calendario. Si lo cerraste, puedes volver a abrirlo.',
+  calOpenLabel: 'Abrir calendario',
   resetLabel: 'Cambiar respuesta',
 };
 
