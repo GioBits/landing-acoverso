@@ -10,7 +10,7 @@ Proyecto Next.js 15 (App Router) listo para Vercel. Separa contenido, diseño, c
 | Casos de éxito (añadir, quitar, cambiar cifras o textos) | `content/cases.js` + vídeo y portada en `public/casos/` |
 | Textos legales | `content/legal/terminos.js`, `privacidad.js`, `cookies.js` |
 | Fecha de vigencia y aviso de borrador de las políticas | `content/legal/index.js` |
-| Cal.com, Loom, píxel de Meta, Google Analytics | `config/site.js` → `integrations` |
+| Cal.com, vídeo del hero (YouTube o Loom), píxel de Meta, Google Analytics | `config/site.js` → `integrations` |
 | Nombre, dominio, descripción para Google, Instagram | `config/site.js` → `site` |
 | Colores de marca, tipografías, medidas | `styles/01-tokens.css` |
 | Diseño de una sección concreta | `styles/<número>-<sección>.css` |
@@ -57,7 +57,7 @@ docs/                        Guía legal y de consentimiento, y el servidor alte
 | `navigation.js` | Enlace activo del menú, menú móvil y botón fijo inferior |
 | `sections.js` | Diagrama del BOS, carrusel de casos, vídeos de casos y FAQ |
 | `agenda.js` | Posición de la agenda (móvil/PC), pregunta, registro del aviso legal y Cal.com |
-| `cookies.js` | Preferencias de cookies y vídeo de Loom |
+| `cookies.js` | Preferencias de cookies y vídeo del hero |
 | `index.js` | Orden en que se activa todo |
 
 ## Políticas y huella
@@ -88,7 +88,6 @@ Completa los datos marcados en amarillo en las políticas y pide la revisión de
 
 - respaldo de las cifras;
 - autorización escrita de cada clienta para sus casos;
-- URL de Loom;
 - respuesta de la FAQ sobre tiempo de implementación.
 
 Lo tienes detallado en `docs/legal-y-consentimiento.md`.

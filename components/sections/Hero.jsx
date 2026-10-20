@@ -4,8 +4,9 @@ import { PlayIcon } from '@/components/ui/icons';
 import { integrations } from '@/config/site';
 
 export default function Hero() {
-  // El vídeo solo aparece cuando hay URL de Loom (config/site.js → integrations.loom.hero)
-  const hasVideo = Boolean(integrations.loom.hero);
+  // El vídeo solo aparece cuando hay URL (config/site.js → integrations.videos.hero)
+  const video = integrations.videos.hero;
+  const hasVideo = Boolean(video && video.url);
   return (
     <section className={hasVideo ? 'hero' : 'hero hero--solo'} id="hero" aria-labelledby="h-hero">
       <p className="chip-bos"><span className="dots" aria-hidden="true"><span></span><span></span></span>{hero.tag}</p>
@@ -13,8 +14,9 @@ export default function Hero() {
       <p className="lead">{hero.lead}</p>
       {hasVideo && (
         <div className="video" style={{ marginTop: 32 }}>
-          {/* El vídeo de Loom se carga al pulsar */}
-          <button className="play" type="button" data-loom="hero" aria-label="Reproducir video"><PlayIcon /></button>
+          {/* El reproductor se carga al pulsar; hasta entonces solo se ve la portada */}
+          {video.poster && <img className="poster" src={video.poster} alt="" width="1280" height="720" fetchPriority="high" />}
+          <button className="play" type="button" data-video="hero" aria-label="Reproducir video"><PlayIcon /></button>
           <span className="cap">{hero.videoCaption}</span>
         </div>
       )}

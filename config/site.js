@@ -17,8 +17,11 @@ export const site = {
 export const integrations = {
   // Evento de Cal.com que se muestra al responder "Sí" (cal.com/<calLink>)
   calLink: 'acoverso/educador-digital',
-  // URL de inserción de Loom del vídeo principal: https://www.loom.com/embed/...
-  loom: { hero: '' },
+  // Vídeo principal del hero (enlace de YouTube o de Loom). Vacío = no se muestra.
+  // poster: portada servida desde /public, para no conectar con YouTube hasta pulsar reproducir.
+  videos: {
+    hero: { url: 'https://youtu.be/CA-JVdtOTeo', poster: '/video/vsl.webp' },
+  },
   // Opcionales. Si se rellenan, aparece el aviso de cookies automáticamente.
   metaPixelId: '',
   gaId: '',

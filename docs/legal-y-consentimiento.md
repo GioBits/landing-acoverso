@@ -30,7 +30,7 @@ Al inicio del script hay un bloque `ACO` con cinco valores:
 |---|---|
 | consentEndpoint | URL del servidor de registro, p. ej. `https://registro.acoverso.com/consent` |
 | calLink | Ya configurado: `acoverso/educador-digital` |
-| loom.hero | URL de inserción de Loom del VSL (`https://www.loom.com/embed/...`) |
+| videos.hero | Enlace de YouTube (o Loom) del VSL y su portada en `/public/video` |
 | metaPixelId | ID del píxel de Meta, si vais a usarlo |
 | gaId | ID de Google Analytics (`G-XXXX`), si vais a usarlo |
 
@@ -138,7 +138,7 @@ No soy abogado y esto no es asesoría legal. Es una revisión técnica para prep
 
 ### Cookies: ¿necesito pedir consentimiento?
 
-Hoy no. La web solo guarda en el navegador la preferencia de cookies, que es estrictamente necesaria. Las fuentes ya no se cargan desde Google (un tribunal alemán en 2022 consideró ilegal enviar la IP del visitante a Google Fonts sin consentimiento), y los vídeos de Loom no se cargan hasta que la persona pulsa reproducir y acepta.
+Hoy no. La web solo guarda en el navegador la preferencia de cookies, que es estrictamente necesaria. Las fuentes ya no se cargan desde Google (un tribunal alemán en 2022 consideró ilegal enviar la IP del visitante a Google Fonts sin consentimiento), y los vídeos de YouTube no se cargan hasta que la persona pulsa reproducir y acepta.
 
 En cuanto añadáis el píxel de Meta o Google Analytics, sí: para visitantes de la UE y Reino Unido es obligatorio el consentimiento previo, y en Latinoamérica la tendencia es la misma (Perú exige consentimiento expreso para publicidad). La web ya está preparada: al rellenar `metaPixelId` o `gaId` aparece el aviso y esos scripts no se cargan hasta que la persona acepta.
 
@@ -151,7 +151,7 @@ En cuanto añadáis el píxel de Meta o Google Analytics, sí: para visitantes d
 | Cuadrícula, grano, iconos y diagramas | Creados en código para esta web | Cumple: sin derechos de terceros |
 | Foto de Alexander Acosta | Pendiente | Si la tomó un fotógrafo, conseguir licencia o cesión por escrito |
 | Fotos o vídeos de los casos | Pendiente | Autorización escrita de cada cliente para usar su nombre, imagen y resultados |
-| Vídeos de Loom | ACOVERSO | Revisar que no incluyan música, imágenes o capturas de terceros sin licencia |
+| Vídeos de YouTube | ACOVERSO | Revisar que no incluyan música, imágenes o capturas de terceros sin licencia |
 
 Hoy la web no usa ninguna fotografía ni imagen de terceros.
 

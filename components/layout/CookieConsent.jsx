@@ -2,7 +2,7 @@
 // La lógica está en lib/behaviors/cookies.js
 
 const OPTIONAL = [
-  { id: 'ck-media', title: 'Contenido externo', text: 'Vídeos de Loom. Pueden usar cookies de Loom.' },
+  { id: 'ck-media', title: 'Contenido externo', text: 'Vídeos de YouTube. Pueden usar cookies de YouTube (Google).' },
   { id: 'ck-analytics', title: 'Medición', text: 'Google Analytics, para contar visitas de forma agregada.' },
   { id: 'ck-marketing', title: 'Publicidad', text: 'Píxel de Meta, para medir y personalizar anuncios.' },
 ];

@@ -4,6 +4,9 @@
 .dots span{width:5px;height:5px;background:var(--neon);box-shadow:0 0 8px var(--neon)}
 .video{position:relative;width:100%;max-width:100%;aspect-ratio:16/9;border-radius:16px;border:1px solid rgba(51,195,255,.4);display:grid;place-items:center;overflow:hidden;
   background:radial-gradient(60% 60% at 50% 45%,rgba(0,128,248,.22),rgba(0,88,184,.06) 60%,transparent),var(--surface);box-shadow:0 0 60px -20px rgba(0,128,248,.7)}
+.video .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.video .poster~.play,.video .poster~.cap{position:relative;z-index:1}
+.video .poster~.cap{position:absolute;padding:4px 8px;border-radius:6px;background:rgba(0,0,0,.6);color:var(--fg-2)}
 .play{width:76px;height:76px;border-radius:50%;border:1px solid var(--neon);background:rgba(0,128,248,.9);box-shadow:0 0 22px rgba(51,195,255,.7);display:grid;place-items:center;cursor:pointer;transition:transform .3s var(--ease)}
 .play:hover{transform:scale(1.06)}
 .video .cap{position:absolute;bottom:14px;left:16px;font-family:var(--f-mono);font-size:11.5px;color:var(--fg-3)}

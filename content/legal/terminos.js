@@ -6,7 +6,7 @@
 export const terminos = {
   slug: 'terminos',
   title: "Términos y condiciones",
-  version: '2.1',
+  version: '2.2',
   intro: "Estos términos regulan el uso de acoverso.com, la llamada de diagnóstico y la contratación de los servicios de ÄCOVERSO, incluidos los pagos, la cancelación y los reembolsos. Léelos antes de agendar o pagar.",
   body: `
 <h2 id="t1">1. Quiénes somos y aceptación</h2>
@@ -75,7 +75,7 @@ export const terminos = {
 <p>Te comprometes a no usar el sitio para fines ilícitos, a no introducir datos de terceros sin su permiso, a no intentar acceder a sistemas que no te corresponden y a no automatizar solicitudes de agenda.</p>
 
 <h2 id="t15">15. Servicios de terceros</h2>
-<p>El sitio y los servicios usan o integran servicios de terceros, como Cal.com, Loom, Instagram y pasarelas de pago. No controlamos esos servicios y su uso se rige por sus propias condiciones y políticas de privacidad.</p>
+<p>El sitio y los servicios usan o integran servicios de terceros, como Cal.com, YouTube, Instagram y pasarelas de pago. No controlamos esos servicios y su uso se rige por sus propias condiciones y políticas de privacidad.</p>
 
 <h2 id="t16">16. Responsabilidad</h2>
 <p>El sitio se ofrece tal cual. En la medida en que la ley lo permita, ÄCOVERSO no responde de daños indirectos, lucro cesante ni pérdida de datos, y su responsabilidad total frente a ti por cualquier causa no superará lo que nos hayas pagado en los 12 meses anteriores al hecho que la origine (o 100 dólares estadounidenses si no has contratado ningún servicio). Esta limitación no afecta a los derechos que la ley de tu país te reconozca como consumidor y que no puedan excluirse por contrato.</p>

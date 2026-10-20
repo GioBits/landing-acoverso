@@ -6,7 +6,7 @@
 export const privacidad = {
   slug: 'privacidad',
   title: "Política de privacidad",
-  version: '1.1',
+  version: '1.2',
   intro: "Qué datos tuyos tratamos cuando visitas acoverso.com y solicitas un diagnóstico, para qué, con quién los compartimos y cómo ejercer tus derechos.",
   body: `
 <h2 id="p1">1. Responsable</h2>
@@ -42,7 +42,7 @@ export const privacidad = {
 <tr><td>Airtable</td><td>Gestión de solicitudes y registro de aceptaciones</td><td>Estados Unidos</td></tr>
 <tr><td>Make</td><td>Automatización entre herramientas</td><td>Unión Europea / Estados Unidos</td></tr>
 <tr><td><mark class="pend">[PROVEEDOR DE HOSTING]</mark></td><td>Alojamiento del sitio y registro técnico de la aceptación</td><td>Estados Unidos</td></tr>
-<tr><td>Loom</td><td>Vídeos, solo si decides reproducirlos</td><td>Estados Unidos</td></tr>
+<tr><td>YouTube (Google)</td><td>Vídeos, solo si decides reproducirlos</td><td>Estados Unidos</td></tr>
 <tr><td>Meta y Google</td><td>Medición y publicidad, solo si las aceptas</td><td>Estados Unidos</td></tr>
 <tr><td><mark class="pend">[HERRAMIENTA DE VIDEOLLAMADA Y GRABACIÓN]</mark></td><td>Realizar la llamada de diagnóstico</td><td><mark class="pend">[PAÍS]</mark></td></tr>
 </tbody></table></div>
