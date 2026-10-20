@@ -138,7 +138,7 @@ No soy abogado y esto no es asesoría legal. Es una revisión técnica para prep
 
 ### Cookies: ¿necesito pedir consentimiento?
 
-Hoy no. La web solo guarda en el navegador la preferencia de cookies, que es estrictamente necesaria. Las fuentes ya no se cargan desde Google (un tribunal alemán en 2022 consideró ilegal enviar la IP del visitante a Google Fonts sin consentimiento), y los vídeos de YouTube no se cargan hasta que la persona pulsa reproducir y acepta.
+Hoy no. La web solo guarda en el navegador la preferencia de cookies, que es estrictamente necesaria. Las fuentes ya no se cargan desde Google (un tribunal alemán en 2022 consideró ilegal enviar la IP del visitante a Google Fonts sin consentimiento), y los vídeos de YouTube no se cargan hasta que la persona pulsa reproducir (se insertan desde youtube-nocookie.com).
 
 En cuanto añadáis el píxel de Meta o Google Analytics, sí: para visitantes de la UE y Reino Unido es obligatorio el consentimiento previo, y en Latinoamérica la tendencia es la misma (Perú exige consentimiento expreso para publicidad). La web ya está preparada: al rellenar `metaPixelId` o `gaId` aparece el aviso y esos scripts no se cargan hasta que la persona acepta.
 

@@ -12,6 +12,4 @@
 .ck-row span{display:block;font-size:13px;color:var(--fg-3);line-height:1.5}
 .ck-row input{width:22px;height:22px;accent-color:#0080F8;flex:0 0 auto}
 .ck-panel .ck-actions{margin-top:16px}
-.lm-note{position:absolute;inset:auto 16px 16px 16px;padding:12px 14px;border-radius:10px;background:rgba(0,0,0,.85);border:1px solid var(--hair-2);font-size:13px;line-height:1.5;color:var(--fg-2);display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
-.lm-note button{min-height:40px}
 .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
