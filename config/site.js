@@ -20,7 +20,7 @@ export const integrations = {
   // Vídeo principal del hero (enlace de YouTube o de Loom). Vacío = no se muestra.
   // poster: portada servida desde /public, para no conectar con YouTube hasta pulsar reproducir.
   videos: {
-    hero: { url: 'https://youtu.be/CA-JVdtOTeo', poster: '/video/vsl.webp' },
+    hero: { url: 'https://youtu.be/9RgW2CHVNJ0', poster: '/video/vsl.webp' },
   },
   // Opcionales. Si se rellenan, aparece el aviso de cookies automáticamente.
   metaPixelId: '',
